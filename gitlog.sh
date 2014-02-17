@@ -1,4 +1,3 @@
-echo $1
 
 cd "$1"
 
@@ -20,7 +19,7 @@ do
     echo "On" $date
     #git checkout $hash
     #run tests
-    python db.py $hash $author $date
+    python /Users/Davis/Documents/workspace/sqlalchemy-test/db.py $hash $author $date
   elif (($counter % 3 == 1));
   then
     author=$line
